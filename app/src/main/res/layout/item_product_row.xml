@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="product name"
+        android:textColor="#6b6868"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productquentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productname"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="product "
+        android:textColor="#878787"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productquentity"
+        android:text="product name"
+        android:textColor="#f18513"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_deleteicon" />
+
+    <ImageButton
+        android:id="@+id/edit_btn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/delete_btn"
+        android:background="@drawable/ic_editicon" />
+</RelativeLayout>
